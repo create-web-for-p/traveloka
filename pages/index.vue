@@ -9,9 +9,10 @@
       Password: <input type="password" name="password" id="password"
         v-model="password" data-testid="password">
     </div>
-    <p>Times clicked: {{ count }}</p>
+     <button @click="summit">submit</button>
+    <p data-testid="Times">Times clicked: {{ count }}</p>
     <button @click="increment">increment</button>
-      <input type="text" id="fname" name="fname"><br><br>
+      <input  data-testid="click" type="text" id="fname" name="fname"><br><br>
   </div>
 </template>
 
@@ -30,6 +31,13 @@
       increment() {
         this.count++
       },
+      summit () {
+          if(this.username == '' && this.password == '')
+          {
+            window.alert("no data");
+          }
+          
+      }
     },
   }
 </script>
