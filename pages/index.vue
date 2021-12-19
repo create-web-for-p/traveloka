@@ -17,6 +17,7 @@
 </template>
 
 <script>
+  import Swal from 'sweetalert2'
   export default {
 
     name: 'Button',
@@ -34,7 +35,12 @@
       summit () {
           if(this.username == '' && this.password == '')
           {
-            window.alert("no data");
+            Swal.fire('Any fool can use a computer')
+          }else{
+            Swal.fire('The Internet?',
+                      'That thing is still around?',
+                      'question'
+            )
           }
           
       }
