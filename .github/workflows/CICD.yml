@@ -28,7 +28,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: tonkitlab/cs360-calc-image:latest
+        tags: 9650074/cs360:latest
     
     - name: Configure AWS credentials
       if: success()
