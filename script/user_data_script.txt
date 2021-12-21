@@ -7,4 +7,4 @@ sudo service docker start
 sudo gpasswd -a ec2-user docker
 newgrp docker
 
-docker run -dp 3000:3000 9650074/cs360:latest
+docker run -dp 3000:80 9650074/cs360:latest
