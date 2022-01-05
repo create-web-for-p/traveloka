@@ -1,37 +1,24 @@
 <template>
   <div>
     <h1>Hello</h1>
+    <NuxtLink to="/page"> page</NuxtLink>
+    <NuxtLink to="/trave/2/"> travel</NuxtLink>
+    <h2>{{name}}</h2>
+    
   </div>
 </template>
-
 <script>
-  import Swal from 'sweetalert2'
   export default {
-
-    name: 'Button',
-    
+    name: 'Button', 
     data: () => ({
-      count: 0,
-      title:'Register',
-      username:'',
-      password:''
+      name:"peerawit"
     }),
+
     methods: {
-      increment() {
-        this.count++
-      },
-      summit () {
-          if(this.username == '' && this.password == '')
-          {
-            Swal.fire('Any fool can use a computer')
-          }else{
-            Swal.fire('The Internet?',
-                      'That thing is still around?',
-                      'question'
-            )
-          }
-          
-      }
+   
+     
     },
+
+
   }
 </script>
